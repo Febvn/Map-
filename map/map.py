@@ -105,7 +105,7 @@ def gbfs(start, goal):
 
 # A*
 def astar(start, goal):
-    heuristic = {node: 1 for node in graph}  # heuristik dummy
+    heuristic = {node: 1 for node in graph}  
     frontier = [(heuristic[start], 0, [start])]
     visited = set()
     while frontier:
@@ -137,3 +137,4 @@ show_result("UCS", ucs("Cilegon", "Banyuwangi"))
 show_result("IDS", ids("Cilegon", "Banyuwangi", max_depth=30))
 show_result("GBFS", gbfs("Cilegon", "Banyuwangi"))
 show_result("A*", astar("Cilegon", "Banyuwangi"))
+
